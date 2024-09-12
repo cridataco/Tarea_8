@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue Exitoso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content h1 {
+            color: #4CAF50;
+        }
+        .content p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Despliegue Exitoso</h1>
+        <p>¡El sitio web ha sido actualizado correctamente!</p>
+        <p>Fecha y hora del despliegue: <span id="deploy-time"></span></p>
+        <p>Últimos cambios:</p>
+        <ul id="changes-list">
+            <li>Nuevo diseño en la página principal.</li>
+            <li>Corrección de errores en el formulario de contacto.</li>
+            <li>Actualización de contenido en la sección de blog.</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('deploy-time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
